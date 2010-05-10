@@ -20,8 +20,7 @@
 
   <project path="vendor/avatar" name="avatar5d/android_vendor_avatar" remote="github" />
   <project path="vendor/htc/passion" name="avatar5d/android_vendor_htc_passion" remote="github" />
-
-  <project path="kernel/" name="kernel/msm" revision="android-msm-2.6.32" />
+  <project path="kernel/" name="avatar5d/kernel_msm" remote="github" revision="android-msm-2.6.32-wififix" />
 
   <project path="external/aes" name="platform/external/aes" />
   <project path="external/apache-http" name="platform/external/apache-http" />
