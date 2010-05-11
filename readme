@@ -19,6 +19,10 @@ to build distilled:
      cd ~/src/distilled
      vendor/avatar/make.sh --src=~/src/distilled --dst=/home/avatar
 
+   when you are prompted to select the build type, choose:
+
+     14. avatar_passion-userdebug
+
    this will compile the platform, kernel, boot.img, system.img, and create
    a signed update.zip in the directory specified by "dst." If "dst" is not
    specified, only the platform and kernel will be compiled.
