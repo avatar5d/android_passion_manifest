@@ -14,6 +14,14 @@ to build distilled:
      repo init -u git://github.com/avatar5d/android_vendor_avatar.git -b eclair
      repo sync
 
+3. extract the proprietary files from your nexus one (you must have adb
+   installed and in your PATH for this step):
+
+     cd ~/src/distilled/vendor/htc/passion
+     ./extract-files.sh
+
+   thanks, cyanogen, for this script.
+
 3. compile:
 
      cd ~/src/distilled
@@ -32,3 +40,19 @@ to build distilled:
    --no-kernel option:
 
      vendor/avatar/make.sh --src=~/src/distilled --dst=/home/avatar --no-kernel
+
+distilled is very loosely based on cyanogenmod. only small fragments here
+and there bear any resemblance to the original project. all 
+cyanogenmod-specific functionality and additions have been removed.
+
+distilled uses all vanilla aosp parts with the following exceptions:
+
+  * an updated lock screen framework that i hack at in my spare time. includes
+    a new pin-style locking mechanism in addition to the traditional drag lock.
+  * canadiancow's battery meter
+  * superuser app by koush and jf
+
+note: the kernel is built fresh from google's 2.6.32-msm branch, and includes
+out of the box support for wired and wireless tethering. it is completely
+vanilla and contains no hacks or uv/oc nonsense. however, distilled remains
+compatible with cyanogenmod kernels for those who prefer them.
