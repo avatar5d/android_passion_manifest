@@ -1,0 +1,30 @@
+to build distilled:
+
+1. prepare your build environment. read the instructions here on the android
+   website:
+
+     http://source.android.com/download/using-repo
+
+   stop at the "Initializing a Repo client" step.
+
+2. pull down the distilled source files from github:
+
+     mkdir ~/src/distilled/
+     cd ~/src/distilled
+     repo init -u git://github.com/avatar5d/android_vendor_avatar.git -b eclair
+     repo sync
+
+3. compile:
+
+     cd ~/src/distilled
+     vendor/avatar/make.sh --src=~/src/distilled --dst=/home/avatar
+
+   this will compile the platform, kernel, boot.img, system.img, and create
+   a signed update.zip in the directory specified by "dst." If "dst" is not
+   specified, only the platform and kernel will be compiled.
+
+   note: make.sh cleans and rebuilds the kernel by default. if you've
+   already built the kernel and don't want to recompile it again, use the
+   --no-kernel option:
+
+     vendor/avatar/make.sh --src=~/src/distilled --dst=/home/avatar --no-kernel
