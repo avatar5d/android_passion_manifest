@@ -11,7 +11,7 @@ to build distilled:
 
      mkdir ~/src/distilled/
      cd ~/src/distilled
-     repo init -u git://github.com/avatar5d/android_vendor_avatar.git -b eclair
+     repo init -u git://github.com/avatar5d/android_passion_manifest.git -b eclair
      repo sync
 
 3. extract the proprietary files from your nexus one (you must have adb
@@ -20,7 +20,7 @@ to build distilled:
      cd ~/src/distilled/vendor/htc/passion
      ./extract-files.sh
 
-   thanks, cyanogen, for this script.
+   props to cyanogen for this script 
 
 3. compile:
 
