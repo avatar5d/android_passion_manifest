@@ -93,7 +93,7 @@
   <project path="external/speex" name="platform/external/speex" />
   <project path="external/sqlite" name="platform/external/sqlite" />
   <project path="external/srec" name="platform/external/srec" />
-  <project path="external/stlport" name="platform/external/stlport" />
+  <project path="external/stlport" name="platform/external/stlport" revision="master"/>
   <project path="external/strace" name="platform/external/strace" />
   <project path="external/svox" name="platform/external/svox" />
   <project path="external/tagsoup" name="platform/external/tagsoup" />
@@ -170,7 +170,7 @@
   <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" />
   <project path="packages/wallpapers/MagicSmoke" name="platform/packages/wallpapers/MagicSmoke" />
   <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" />
-  <project path="packages/apps/Superuser" name="ChainsDD/android_packages_apps_Superuser" remote="github" revision="eclair-froyo"/>
+  <project path="packages/apps/Superuser" name="CyanogenMod/android_packages_apps_Superuser" remote="github" revision="master" />
 
   <project path="prebuilt" name="platform/prebuilt" />
   <project path="sdk" name="platform/sdk"  revision="tools_r6"/>
