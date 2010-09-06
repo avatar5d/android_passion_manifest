@@ -26,8 +26,8 @@
 
   <project path="device/common" name="device/common" />
   <project path="device/htc/common" name="device/htc/common" />
-  <project path="device/htc/passion" name="device/htc/passion" />
-  <project path="device/htc/passion-common" name="device/htc/passion-common" />
+  <project path="device/htc/passion" name="device/htc/passion" revision="master" />
+  <project path="device/htc/passion-common" name="device/htc/passion-common" revision="master" />
   <project path="device/htc/dream" name="device/htc/dream" />
   <project path="device/htc/dream-sapphire" name="device/htc/dream-sapphire" />
 
@@ -176,9 +176,9 @@
   <project path="sdk" name="platform/sdk"  revision="tools_r6"/>
   <project path="system/bluetooth" name="platform/system/bluetooth" />
   <project path="system/core" name="platform/system/core" />
-  <project path="system/extras" name="platform/system/extras" />
+  <project path="system/extras" name="CyanogenMod/android_system_extras" remote="github" revision="froyo" />
   <project path="system/netd" name="platform/system/netd" />
-  <project path="system/vold" name="platform/system/vold" />
+  <project path="system/vold" name="CyanogenMod/android_system_vold" remote="github" revision="froyo" />
   <project path="system/wlan/ti" name="platform/system/wlan/ti" />
 
 </manifest>
